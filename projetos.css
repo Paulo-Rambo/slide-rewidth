@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.slider-container{
+    background-color: transparent;
+    max-width: 50vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 12px 6px rgb(163, 163, 163);
+}
+
+.img-container{
+    display: flex;
+    max-width: 50vw;
+    transition: transform 0.4s ease-in-out;
+}
+
+.img-container > img{
+    object-fit: cover;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: max(18px,8vw);
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 0cm;
+    box-sizing: border-box;
+    opacity: 60%;
+    cursor:pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.avancar-esquerda{
+    left: 10px;
+}
+.avancar-direita{
+    right: 10px;
+}
